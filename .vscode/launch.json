@@ -1,0 +1,15 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Run API",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "org.terrakube.api.ServerApplication",
+            "projectName": "api-server",
+            "args": "-Xmx512m -Xms256m",
+            "envFile": "${workspaceFolder}/.envApi",
+            "preLaunchTask": "setup-java"
+        }
+    ]
+}
