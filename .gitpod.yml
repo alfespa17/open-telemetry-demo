@@ -22,11 +22,11 @@ github:
     # add a "Review in Gitpod" button to the pull request's description (defaults to false)
     addBadge: false
 
-#tasks:
-  #- name: Dex Environment Setup
-  #  init: |
-  #    chmod +x scripts/dependencies/loadDex.sh
-  #  command: scripts/dependencies/loadDex.sh
+tasks:
+  - name: Initial Setup
+    init: |
+      chmod +x script-telemetry.sh
+    command: script-telemetry.sh
 
 ports:
   - name: HelloWorld
@@ -51,6 +51,10 @@ ports:
     visibility: public
   - name: tracing-14250
     port: 14250
+    onOpen: ignore
+    visibility: public
+  - name: tracing-4317
+    port: 4317
     onOpen: ignore
     visibility: public
 

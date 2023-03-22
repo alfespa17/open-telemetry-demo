@@ -2,13 +2,11 @@
     "configurations": [
         {
             "type": "java",
-            "name": "Run API",
+            "name": "Run Demo",
             "request": "launch",
             "cwd": "${workspaceFolder}",
-            "mainClass": "org.terrakube.api.ServerApplication",
-            "projectName": "api-server",
+            "mainClass": "com.example.demo.DemoApplication",
             "args": "-Xmx512m -Xms256m",
-            "envFile": "${workspaceFolder}/.envApi",
             "preLaunchTask": "setup-java"
         }
     ]
